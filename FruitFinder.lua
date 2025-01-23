@@ -2,6 +2,7 @@ repeat wait() until game:IsLoaded()
 repeat wait() until game.Players
 repeat wait() until game.Players.LocalPlayer
 repeat wait() until game.ReplicatedStorage
+repeat wait(1)
   local args = {
         [1] = "SetTeam",
         [2] = "Marines"
@@ -11,6 +12,7 @@ repeat wait() until game.ReplicatedStorage
         [1] = "BartiloQuestProgress"
     }
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+until game.Players.LocalPlayer.TeamColor ~= "White"
 ServerHopTimer = 5
 TeleportSafe = true
 Webhook = "https://discord.com/api/webhooks/1330497976530899016/Fd3II8yhiM_wVjTQzPDDv_MVTAHAwtIKwCc1futvX3ztqFOe7zrWquc-wjdn0fbPDwpn"
