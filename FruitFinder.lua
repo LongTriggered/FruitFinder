@@ -4,7 +4,7 @@ repeat wait() until game.Players.LocalPlayer
 repeat wait() until game.ReplicatedStorage
   local args = {
         [1] = "SetTeam",
-        [2] = "Pirates"
+        [2] = "Marines"
     }
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args)) 
     local args = {
