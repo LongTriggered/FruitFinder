@@ -2,7 +2,6 @@ repeat wait() until game:IsLoaded()
 repeat wait() until game.Players
 repeat wait() until game.Players.LocalPlayer
 repeat wait() until game.ReplicatedStorage
-game:GetService("RunService"):Set3dRenderingEnabled(false)
 repeat wait(1)
   local args = {
         [1] = "SetTeam",
@@ -13,6 +12,7 @@ repeat wait(1)
         [1] = "BartiloQuestProgress"
     }
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+  game:GetService("RunService"):Set3dRenderingEnabled(false)
 until game.Players.LocalPlayer.TeamColor ~= "White"
 ServerHopTimer = 5
 TeleportSafe = true
