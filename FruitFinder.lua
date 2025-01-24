@@ -8,7 +8,6 @@
         [1] = "BartiloQuestProgress"
     }
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-  game:GetService("RunService"):Set3dRenderingEnabled(true)
 ServerHopTimer = 5
 TeleportSafe = true
 Webhook = "https://discord.com/api/webhooks/1330497976530899016/Fd3II8yhiM_wVjTQzPDDv_MVTAHAwtIKwCc1futvX3ztqFOe7zrWquc-wjdn0fbPDwpn"
