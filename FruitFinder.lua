@@ -1,8 +1,4 @@
-repeat wait() until game:IsLoaded()
-repeat wait() until game.Players
-repeat wait() until game.Players.LocalPlayer
-repeat wait() until game.ReplicatedStorage
-repeat wait() until game.Players.LocalPlayer.PlayerGui["Main (minimal)"]["ChooseTeam"]
+
   local args = {
         [1] = "SetTeam",
         [2] = "Marines"
