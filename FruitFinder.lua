@@ -2,9 +2,9 @@ repeat wait() until gameIsLoaded()
 repeat wait() until game.Players
 repeat wait() until game.Players.LocalPlayer
 repeat wait() until game.ReplicatedStorage
-repeat wait() until game.ReplicatedStorageFindFirstChild(Remotes);
-repeat wait() until game.Players.LocalPlayerFindFirstChild(PlayerGui);
-repeat wait() until game.Players.LocalPlayer.PlayerGuiFindFirstChild(Main (minimal));
+repeat wait() until game.ReplicatedStorage:FindFirstChild("Remotes");
+repeat wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui");
+repeat wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main (minimal)");
 repeat wait()
 until gameGetService(Players).LocalPlayer.PlayerGuiFindFirstChild(LoadingScreen) == nil
 setfpscap(7)
@@ -22,10 +22,5 @@ ServerHopTimer = 6
 TeleportSafe = true
 Webhook = ""
 _G.Version="Fruit Farm"
-print(game.PlaceId)
-if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SaltyHB/Poggers/refs/heads/main/Main"))()
-else
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SaltyHB/Poggers/refs/heads/main/Fisch"))()
-end
 
