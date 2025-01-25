@@ -1,4 +1,14 @@
-
+repeat wait() until gameIsLoaded()
+repeat wait() until game.Players
+repeat wait() until game.Players.LocalPlayer
+repeat wait() until game.ReplicatedStorage
+repeat wait() until game.ReplicatedStorageFindFirstChild(Remotes);
+repeat wait() until game.Players.LocalPlayerFindFirstChild(PlayerGui);
+repeat wait() until game.Players.LocalPlayer.PlayerGuiFindFirstChild(Main (minimal));
+repeat wait()
+until gameGetService(Players).LocalPlayer.PlayerGuiFindFirstChild(LoadingScreen) == nil
+setfpscap(7)
+gameGetService(RunService)Set3dRenderingEnabled(false)
   local args = {
         [1] = "SetTeam",
         [2] = "Marines"
