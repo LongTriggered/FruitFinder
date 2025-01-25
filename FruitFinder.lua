@@ -21,5 +21,11 @@ gameGetService(RunService)Set3dRenderingEnabled(false)
 ServerHopTimer = 6
 TeleportSafe = true
 Webhook = "https://discord.com/api/webhooks/1330497976530899016/Fd3II8yhiM_wVjTQzPDDv_MVTAHAwtIKwCc1futvX3ztqFOe7zrWquc-wjdn0fbPDwpn"
-_G.Version="Fruit Farm"loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
+_G.Version="Fruit Farm"
+print(game.PlaceId)
+if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SaltyHB/Poggers/refs/heads/main/Main"))()
+else
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SaltyHB/Poggers/refs/heads/main/Fisch"))()
+end
 
